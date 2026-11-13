@@ -22,6 +22,15 @@ int main() {
         D += temp * i;
         i *= 10;
     }
+
+```
+2. Rotting Fruit (Rotting Oranges on LC)
+3. Broken Street Lamps (Substrings in LC)
+4. Warmer Days (Prefix Sum in LC)
+5. Longest Word in String
+6. Library Fines
+7. Theater Seats
+8. 
     
     printf("Display: %d", D);
     
