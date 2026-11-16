@@ -24,6 +24,7 @@ The links below have all the details you need of the event!
 - Bitwise operators
 ## Strings
 - String handling
+## Typecasting
 - Typecasting
 ## Built-in Libraries
 - Predefined character functions
@@ -32,7 +33,7 @@ The links below have all the details you need of the event!
 ## Selection Structures
 - Relational operators
 - Boolean operators
-## If statement
+- If statement
 - If…else statement
 - If…else if…else statement
 - Switch statement
