@@ -62,7 +62,7 @@ For example, **389** is paid as three 100s, four 20s, one 5 and four 1s, so the 
 * `Pieces: P`, where **P** is the number of pieces paid out
 
 **Constraints:**
-* $1 \le \mathbf{N} \le 1000000000$
+* 1 <= N <= 1000000000
 * There is an unlimited supply of every piece, so a value may be used several times or not at all.
 * **N** may be paid with a single piece, or with 1-peso pieces only (when **N** is less than 5).
 
@@ -176,24 +176,24 @@ print(f"Final text: {final_text if final_text else 'EMPTY'}")
 
 **Problem Statement:**
 A heater starts off. A thermostat with low limit L and high limit H takes N readings in order. After each reading:
-* If the heater is off and the reading is **below L**, it turns on.
-* If the heater is on and the reading is **above H**, it turns off.
-* Otherwise, nothing changes.
+- If the heater is off and the reading is **below L**, it turns on.
+- If the heater is on and the reading is **above H**, it turns off.
+- Otherwise, nothing changes.
 
 Count the times it turns on, and the readings that leave it on.
 
 For example, take **L = 18, H = 22** and the readings `20 17 19 21 23 20 16 22 18 23`:
-20: the heater stays off.
-17: below 18, the heater turns on (turned on: 1, readings with heater on: 1).
-19: the heater stays on (readings with heater on: 2).
-21: the heater stays on (readings with heater on: 3).
-23: above 22, the heater turns off.
-20: the heater stays off.
-16: below 18, the heater turns on (turned on: 2, readings with heater on: 4).
-22: not above 22, the heater stays on (readings with heater on: 5).
-18: the heater stays on (readings with heater on: 6).
-23: above 22, the heater turns off.
-So the heater turns on **2** times and **6** readings leave it on.
+- 20: the heater stays off.
+- 17: below 18, the heater turns on (turned on: 1, readings with heater on: 1).
+- 19: the heater stays on (readings with heater on: 2).
+- 21: the heater stays on (readings with heater on: 3).
+- 23: above 22, the heater turns off.
+- 20: the heater stays off.
+- 16: below 18, the heater turns on (turned on: 2, readings with heater on: 4).
+- 22: not above 22, the heater stays on (readings with heater on: 5).
+- 18: the heater stays on (readings with heater on: 6).
+- 23: above 22, the heater turns off.
+- So the heater turns on **2** times and **6** readings leave it on.
 
 **Input Format:**
 * L and H, after `Enter L and H:`
