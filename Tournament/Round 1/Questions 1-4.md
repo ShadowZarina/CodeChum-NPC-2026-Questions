@@ -2,7 +2,7 @@
 
 **Home Row Letters**
 
-**Problem Statement:**
+**Problem Statement:**<br>
 On a QWERTY keyboard, the middle row of letters is the **home row**: `asdfghjkl`. Given a word, count how many of its letters are on the home row.
 
 For example, in `keyboard` only `k`, `a` and `d` are home row letters, so the count is **3**.
@@ -49,7 +49,7 @@ print(f"Home row letters: {count}")
 
 **Fewest Peso Pieces**
 
-**Problem Statement:**
+**Problem Statement:**<br>
 A cashier pays out **N** pesos using only four kinds of pieces: 100, 20, 5 and 1 peso. The cashier hands over as many 100s as fit, then as many 20s as fit in what is left, then 5s, and finally 1s. Print how many pieces are paid out.
 
 For example, **389** is paid as three 100s, four 20s, one 5 and four 1s, so the cashier uses:
@@ -101,7 +101,7 @@ print(f"Pieces: {pieces}")
 
 **Sticky Keyboard Replay**
 
-**Problem Statement:**
+**Problem Statement:**<br>
 Replay a line of keystrokes from left to right and print the text left on the screen. The screen starts empty and Caps Lock starts **OFF**.
 
 * A letter is added to the end of the text, with its case flipped if Caps Lock is **ON**.
@@ -174,7 +174,7 @@ print(f"Final text: {final_text if final_text else 'EMPTY'}")
 
 **Thermostat Switch Count**
 
-**Problem Statement:**
+**Problem Statement:**<br>
 A heater starts off. A thermostat with low limit L and high limit H takes N readings in order. After each reading:
 - If the heater is off and the reading is **below L**, it turns on.
 - If the heater is on and the reading is **above H**, it turns off.
@@ -204,7 +204,7 @@ For example, take **L = 18, H = 22** and the readings `20 17 19 21 23 20 16 22 1
 Two lines: `Turned on:` and the first count, then `Readings with heater on:` and the second.
 
 **Constraints:**
-* $-50 \le L < H \le 50$, $1 \le N \le 50$, readings from -100 to 100.
+* -50 < L < H < 50, 1 < N < 50, readings from -100 to 100.
 * A reading equal to L or H never switches the heater.
 * The heater may never turn on, or stay on to the end.
 
@@ -221,7 +221,7 @@ Readings with heater on: 6
 
 ## ANSWER 4
 
-```python
+```
 L, H = map(int, input("Enter L and H: ").split())
 N = int(input("Enter N: "))
 readings = list(map(int, input("Enter the readings: ").split()))
