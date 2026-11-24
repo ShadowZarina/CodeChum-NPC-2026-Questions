@@ -1,9 +1,12 @@
 # QUESTION 5
 
-**Best Stock Trade** *(Top portion of problem statement cut off in screenshot)*
+**Best Day to Sell Rice**
 
-**Problem Statement:**
-- *(Partial text visible)*: ...buying at 50 (day 3) and selling at 50 (day 4) earns 50 - 50 = 0...
+**Problem Statement:**<br>
+- A vendor knows the price of a sack of rice for each of the next N days (days 1 to N). She buys one sack on one day and sells it on a lateer day, earning the selling price minus the buying price. Find the largest profit and the day she sells. On a tie, use the earliest selling day. If no choice earns more than 0, she does not trade.
+<br><br>
+For example, for the prices `45 38 50 42 36 47 55`:
+- Buying at 38 (day 2) and selling at 50 (day 3) earns 50 - 38 = 12.
 - Buying at 36 (day 5) and selling at 55 (day 7) earns 55 - 36 = **19**, the best.
 
 **Input Format:**
@@ -148,8 +151,8 @@ print(f"Score: {score}")
 
 **Round-Robin Champion**
 
-**Problem Statement:**
-**N** teams played a round-robin tournament, so every pair of teams met exactly once. In the $\mathbf{N \times N}$ score table, `g[i][j]` (row `i`, column `j`) is the number of goals team `i` scored against team `j`, so their match ended `g[i][j]` to `g[j][i]`. Teams are numbered `1` to **N** in row order.
+**Problem Statement:**<br>
+**N** teams played a round-robin tournament, so every pair of teams met exactly once. In the (N * N) score table, `g[i][j]` (row `i`, column `j`) is the number of goals team `i` scored against team `j`, so their match ended `g[i][j]` to `g[j][i]`. Teams are numbered `1` to **N** in row order.
 <br><br>
 A win (more goals than the opponent) earns **3** points, a draw **1** point and a loss **0** points. The **champion** is the team with the most points; if teams tie on points, the higher goal difference wins, then the smaller team number. Print the champion's number, its points and its **goal difference**: the champion's total goals scored minus its total goals conceded.
 <br><br>
@@ -173,7 +176,7 @@ Team 2 beat Team 1 3–1 and the other two matches were 2–2 draws. The points 
 * `Goal Difference: G`, the champion's goal difference
 
 **Constraints:**
-* $2 \le \mathbf{N} \le 10$, and every goal value is from 0 to 20.
+* 2 <= 10 <= N, and every goal value is from 0 to 20.
 * Every diagonal value (row `i`, column `i`) is 0 and is ignored.
 * Ties: most points first, then higher goal difference, then smaller team number.
 * The goal difference can be positive, zero or negative (printed with a leading minus sign).
@@ -260,7 +263,7 @@ print(f"Goal Difference: {best_gd}")
 
 **Four-Drop Showdown**
 
-**Problem Statement:**
+**Problem Statement:**<br>
 In Connect Four, players take turns dropping discs into the columns of an upright board, and each disc falls to the **lowest empty cell** of its column. **A** and **B** play on **R** rows and **C** columns, numbered 1 to **C** from the left. **A** drops first.
 <br><br>
 A player wins as soon as their new disc completes an unbroken **horizontal** or **vertical** line of **4 or more** of their discs. Later drops are ignored. **Diagonal lines never count.**
@@ -287,7 +290,7 @@ A B B B B X X
 * `Draw`, if nobody wins
 
 **Constraints:**
-* $4 \le \mathbf{R}, \mathbf{C} \le 10$, $1 \le \mathbf{M} \le \mathbf{R \times C}$, and each column number is 1 to **C**.
+* $4 <= R, C <= 10, $1 <= M <= R * C, and each column number is 1 to **C**.
 * No column gets more than **R** drops, ignored ones included. The board may end up full.
 * The new disc may be at the end or the middle of the line, the line may be longer than 4, and the win may come on the last drop.
 * A diagonal of 4 may form before the real win.
