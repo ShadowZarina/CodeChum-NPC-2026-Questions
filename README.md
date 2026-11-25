@@ -11,7 +11,7 @@ The links below have all the details you need of the event!
 - Python is the ideal language to use due to its simplicity (cuts a lot of time!). However you must _stick to your **most comfortable language**_
 - Most if not ALL questions are taken from LeetCode questions so I highly suggest you go through problem sets like NeetCode 75.
 - Sample questions include Best Day to Buy and Sell Stock, Longest Consecutive Sequence, and Rotting Oranges
-- Concepts like **Sliding Window, Two Pointers, and Matrices/Nested Arrays** must be noted!
+- Concepts like **Sliding Window, Two Pointers, Strings & Substrings, and Matrices/Nested Arrays** must be noted!
 
 # COVERAGE!
 - Number of items: 8 console application problems per match
